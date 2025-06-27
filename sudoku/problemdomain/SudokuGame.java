@@ -1,3 +1,5 @@
+package sudoku.problemdomain;
+
 import java.io.Serializable;
 
 public class SudokuGame implements Serializable {
