@@ -3,6 +3,7 @@
 ## Daily Progress Through Course
 
 * 26/06/25 Day 1: 0:00-5:00
+* 27/06/25 Day 2: 5:00-10:00
 
 ##
 
