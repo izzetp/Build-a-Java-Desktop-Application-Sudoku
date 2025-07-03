@@ -1,4 +1,4 @@
-package sudoku.userinterface
+package sudoku.userinterface;
 
 import javafx.event.EventHandler;
 import javafx.scene.input.KeyEvent;
@@ -6,18 +6,26 @@ import sudoku.problemdomain.SudokuGame;
 
 public class UserInterfaceImpl implements IUserInterfaceContract.view,
         EventHandler<KeyEvent> {
-	@Override
-	public void handle(KeyEvent keyEvent) {
 
-	}
+    private final Stage stage;
+    private final Group root;
 
-	@Override
-	public void setListener(IUserInterfaceContract.EventListener listener) {
+    private HashMap<Coordinates, SudokuTestField> textFieldCoordinates;
 
-	}
+    private IUserInterfaceContract.EventListener listener;
 
-	@Override
-	public void updateSquare(int x, int y , int input) {
+    @Override
+    public void handle(KeyEvent keyEvent) {
 
-	}
+    }
+
+    @Override
+    public void setListener(IUserInterfaceContract.EventListener listener) {
+
+    }
+
+    @Override
+     public void updateSquare(int x, int y , int input) {
+
+    }
 }
