@@ -9,7 +9,7 @@
 * 30/06/25 Day 5: 13:00-14:00
 * 01/07/25 Day 6: 14:00-15:00
 * 02/07/25 Day 7: 15:00-18:00
-* 03/07/25 Day 7: 18:00-25:00
+* 03/07/25 Day 7: 18:00-20:00
 ##
 
 * https://www.youtube.com/watch?app=desktop&v=ZIX1m-bYJyU (uma)
