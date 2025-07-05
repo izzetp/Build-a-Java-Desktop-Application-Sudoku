@@ -11,6 +11,7 @@
 * 02/07/25 Day 7: 15:00-18:00
 * 03/07/25 Day 7: 18:00-20:00
 * 04/07/25 Day 8: 20:00-21:00
+* 05/07/25 Day 9: 20:00-21:00
 ##
 
 * https://www.youtube.com/watch?app=desktop&v=ZIX1m-bYJyU (uma)
