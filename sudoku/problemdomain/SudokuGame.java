@@ -1,4 +1,4 @@
-package sudoku.problemdomain;
+package sudoku.constants.gameState;
 
 import java.io.Serializable;
 
