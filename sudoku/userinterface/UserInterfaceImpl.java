@@ -196,7 +196,13 @@ public class UserInterfaceImpl implements IUserInterfaceContract.view,
                 );
 
                 if (game.getGameState()  == gameState.NEW) {
-                    
+                    if (value.equals("")) {
+                        tile.setStyle("-fx-opacity: 1;");
+                        tile.setDisable(false);
+                    } else {
+                        tile.setStyle("-fx-opacity: 0.8;");
+                        tile.setDisable(true);
+                    }
                 }
             }
         }
@@ -204,7 +210,8 @@ public class UserInterfaceImpl implements IUserInterfaceContract.view,
 
     @Override
     public void showDialog(String Message) {
-
+        Alert dialog = new Alert(Alert.AlertType.CONFIRMATION, message, ButtonType.OK);
+        dialog.showAndWait();
     }
 
     @Override
