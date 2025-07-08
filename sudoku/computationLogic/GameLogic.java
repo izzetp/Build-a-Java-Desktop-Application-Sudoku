@@ -95,7 +95,7 @@ public class GameLogic {
         return false;
     }
 
-    private static boolean collectionHasRepeated(List<Integer> collection) {
+    public static boolean collectionHasRepeated(List<Integer> collection) {
         for (int index = 1; index <= GRID_BOUNDARY; index++) {
             if (Collections.frequency(collection, index) > 1) return true;
         }
@@ -103,7 +103,7 @@ public class GameLogic {
         return false;
     }
 
-    private static boolean tilesAreNotFilled(int[][] grid) {
+    public static boolean tilesAreNotFilled(int[][] grid) {
         for (int xIndex = 0; xIndex < GRID_BOUNDARY; xIndex++) {
             for (int yIndex = 0; yIndex < GRID_BOUNDARY; yIndex++) {
                 if (grid[xIndex][yIndex] == 0) return true;
