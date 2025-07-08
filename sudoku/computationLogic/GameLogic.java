@@ -27,6 +27,19 @@ public class GameLogic {
         else return false;
     }
 
+    private static boolean columnsAreInvalid(int[][] grid) {
+        for (int yIndex = 0; yIndex < GRID_BOUNDARY; yIndex++) {
+            List<Integer> row = new ArrayList<>();
+            for (int xIndex = 0; xIndex < GRID_BOUNDARY; xIndex++) {
+                row.add(grid[xIndex][yIndex]);
+            }
+
+            if (collectionHasRepeats(row)) return true;
+        }
+
+        return false;
+    }
+
     private static boolean squaresAreInvalid(int[][] grid) {
         if (rowsOfSquaresIsInvalid(Rows.TOP, grid)) return true;
 
@@ -44,6 +57,18 @@ public class GameLogic {
                 if (SquareIsInvalid(0, 3, grid)) return true;
                 if (SquareIsInvalid(0, 6, grid)) return true;
                 return false;
+            case MIDDLE:
+                if (SquareIsInvalid(3, 0, grid)) return true;
+                if (SquareIsInvalid(3, 3, grid)) return true;
+                if (SquareIsInvalid(3, 6, grid)) return true;
+                return false;
+            case BOTTOM:
+                if (SquareIsInvalid(6, 0, grid)) return true;
+                if (SquareIsInvalid(6, 3, grid)) return true;
+                if (SquareIsInvalid(6, 6, grid)) return true;
+                return false;
+            default:
+                return false;
         }
     }
 
@@ -58,14 +83,24 @@ public class GameLogic {
                 square.add(
                     grid[xIndex][yIndex]
                 );
+
+                xIndex++;
             }
 
-            xIndex++;
+            xIndex -= 3;
+
+            yIndex++;
+        }
+        if (collectionHasRepeated(square)) return true;
+        return false;
+    }
+
+    private static boolean collectionHasRepeated(List<Integer> collection) {
+        for (int index = 1; index <= GRID_BOUNDARY; index++) {
+            if (Collections.frequency(collection, index) > 1) return true;
         }
 
-        xIndex -= 3;
-
-        yIndex++;
+        return false;
     }
 
     private static boolean tilesAreNotFilled(int[][] grid) {
