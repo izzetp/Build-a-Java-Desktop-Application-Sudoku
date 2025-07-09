@@ -1,4 +1,4 @@
-## Java-Sudoku-Application
+## Java-Application-Sudoku
 
 ## Daily Progress Through Course
 
