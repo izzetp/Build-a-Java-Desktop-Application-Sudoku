@@ -1,4 +1,4 @@
-## Build-a-Java-Desktop-Application-Sudoku
+## Java-Sudoku-Application
 
 ## Daily Progress Through Course
 
